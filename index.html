@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gala Quinceañeras HSF 2025 - Invitación Elegante</title>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700&family=Great+Vibes&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            /* Light & Elegant Palette */
+            --background-ivory: #F7F5F2;
+            --text-charcoal: #4A4A4A;
+            --accent-gold: #A67B5B;
+            --accent-sage: #7E8D85;
+            --accent-rose: #C4A7A8;
+            --pure-white: #FFFFFF;
+            --border-light: #D1CFC9;
+            --transition: all 0.3s ease;
+            --shadow-soft: 0 5px 25px rgba(0, 0, 0, 0.08);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--background-ivory);
+            color: var(--text-charcoal);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Styles */
+        header {
+            padding: 25px 0;
+            text-align: center;
+            position: relative;
+            z-index: 10;
+        }
+
+        .logo-container {
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .logo {
+            width: 120px;
+            height: 120px;
+            background: none;
+            border-radius: 10%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Playfair Display SC', serif;
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: var(--pure-white);
+            /*box-shadow: var(--shadow-soft);*/
+        }
+
+        h1 {
+            font-family: 'Playfair Display SC', serif;
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: var(--accent-gold);
+            letter-spacing: 1px;
+        }
+
+        .slogan {
+            font-family: 'Great Vibes', cursive;
+            font-size: 2.2rem;
+            color: var(--text-charcoal);
+            margin-bottom: 15px;
+            opacity: 0.8;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            margin: 20px 0;
+            border-radius: 10px;
+            overflow: hidden;
+            height: 500px;
+            box-shadow: var(--shadow-soft);
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top, rgba(247, 245, 242, 0.2) 0%, rgba(247, 245, 242, 0) 50%);
+            z-index: 1;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Event Info */
+        .event-info {
+            background: var(--pure-white);
+            padding: 30px;
+            border-radius: 10px;
+            margin: 40px 0;
+            box-shadow: var(--shadow-soft);
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            border: 1px solid var(--border-light);
+        }
+
+        .info-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .info-icon {
+            font-size: 1.8rem;
+            color: var(--accent-gold);
+            min-width: 40px;
+            text-align: center;
+        }
+
+        .info-text h3 {
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+            color: var(--accent-gold);
+            font-weight: 600;
+        }
+
+        /* Countdown Timer */
+        .countdown {
+            background: transparent;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .countdown-title {
+            font-family: 'Playfair Display SC', serif;
+            font-size: 1.8rem;
+            color: var(--accent-gold);
+            margin-bottom: 20px;
+        }
+
+        .timer {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .timer-item {
+            background: var(--pure-white);
+            padding: 15px;
+            border-radius: 8px;
+            min-width: 90px;
+            box-shadow: var(--shadow-soft);
+            border: 1px solid var(--border-light);
+        }
+
+        .timer-value {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: var(--accent-gold);
+            margin-bottom: 5px;
+            transition: transform 0.5s ease;
+        }
+
+        .timer-label {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-charcoal);
+            opacity: 0.7;
+        }
+
+        /* Buttons */
+        .cta-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            margin: 40px 0;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-weight: 500;
+            font-size: 1.1rem;
+            text-decoration: none;
+            cursor: pointer;
+            transition: var(--transition);
+            border: 1px solid transparent;
+            width: 100%;
+            max-width: 350px;
+            text-align: center;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-secondary {
+            background: var(--accent-sage);
+            color: var(--pure-white);
+        }
+
+        .btn-alternate {
+            background: var(--accent-rose);
+            color: var(--pure-white);
+        }
+
+        .btn-primary {
+            background: var(--accent-gold);
+            color: var(--pure-white);
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+
+        .btn-icon {
+            font-size: 1.3rem;
+        }
+
+        /* WhatsApp Button */
+        .whatsapp-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: #25D366;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            box-shadow: var(--shadow-soft);
+            z-index: 100;
+            transition: var(--transition);
+            text-decoration: none;
+        }
+
+        .whatsapp-btn:hover {
+            transform: scale(1.1) translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .whatsapp-tooltip {
+            position: absolute;
+            bottom: 70px;
+            right: 0;
+            background: var(--text-charcoal);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            white-space: nowrap;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .whatsapp-btn:hover .whatsapp-tooltip {
+            opacity: 1;
+        }
+
+        /* Modal Styles */
+        .modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(74, 74, 74, 0.6);
+            backdrop-filter: blur(5px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.4s ease;
+        }
+
+        .modal.active {
+            opacity: 1;
+            pointer-events: all;
+        }
+
+        .modal-content {
+            background: var(--background-ivory);
+            width: 90%;
+            max-width: 600px;
+            border-radius: 10px;
+            overflow: hidden;
+            transform: translateY(50px);
+            transition: transform 0.4s ease;
+            max-height: 90vh;
+            overflow-y: auto;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+
+        .modal.active .modal-content {
+            transform: translateY(0);
+        }
+
+        .modal-header {
+            background: var(--pure-white);
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .modal-title {
+            font-family: 'Playfair Display SC', serif;
+            font-size: 1.8rem;
+            color: var(--accent-gold);
+        }
+
+        .close-modal {
+            background: none;
+            border: none;
+            color: var(--text-charcoal);
+            font-size: 1.8rem;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .close-modal:hover {
+            color: var(--accent-gold);
+            transform: rotate(90deg);
+        }
+
+        .modal-body {
+            padding: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border-radius: 8px;
+            border: 1px solid var(--border-light);
+            background: var(--pure-white);
+            color: var(--text-charcoal);
+            font-family: 'Poppins', sans-serif;
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: var(--accent-gold);
+            box-shadow: 0 0 0 3px rgba(166, 123, 91, 0.2);
+        }
+
+        .radio-group {
+            display: flex;
+            gap: 20px;
+            margin: 10px 0;
+        }
+        
+        input[type="file"] {
+            padding: 10px;
+            background-color: var(--background-ivory);
+        }
+        
+        input[type="file"]::file-selector-button {
+            background-color: var(--accent-sage);
+            color: var(--pure-white);
+            border: none;
+            padding: 8px 12px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        input[type="file"]::file-selector-button:hover {
+            background-color: #6a7b72;
+        }
+
+
+        .radio-option {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .companion-field {
+            display: none;
+            margin-top: 15px;
+        }
+
+        .companion-field.visible {
+            display: block;
+        }
+
+        .btn-submit {
+            background: var(--accent-gold);
+            color: var(--pure-white);
+            font-weight: 600;
+            padding: 15px;
+            font-size: 1.1rem;
+            margin-top: 10px;
+            width: 100%;
+        }
+
+        /* Loader & Confirmation */
+        .loader, .confirmation {
+            display: none;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .loader-circle {
+            width: 60px;
+            height: 60px;
+            border: 5px solid rgba(0, 0, 0, 0.1);
+            border-top: 5px solid var(--accent-gold);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+        
+        .confirmation-icon {
+            font-size: 4rem;
+            color: var(--accent-gold);
+            margin-bottom: 20px;
+        }
+
+        .confirmation h2 {
+            font-family: 'Playfair Display SC', serif;
+            font-size: 2rem;
+            margin-bottom: 15px;
+            color: var(--accent-gold);
+        }
+
+        /* Footer */
+        footer {
+            background: transparent;
+            padding: 30px 0;
+            text-align: center;
+            margin-top: auto;
+            font-size: 0.9rem;
+            color: var(--text-charcoal);
+            opacity: 0.7;
+        }
+
+        /* Animations */
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .fade-in {
+            animation: fadeIn 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 { font-size: 2.2rem; }
+            .slogan { font-size: 1.8rem; }
+            .hero { height: 350px; }
+            .timer-item { min-width: 70px; padding: 12px; }
+            .timer-value { font-size: 2rem; }
+        }
+
+        @media (max-width: 480px) {
+            h1 { font-size: 1.8rem; }
+            .slogan { font-size: 1.5rem; }
+            .hero { height: 250px; }
+            .timer { gap: 8px; }
+            .timer-item { min-width: 60px; padding: 10px; }
+            .timer-value { font-size: 1.6rem; }
+            .timer-label { font-size: 0.8rem; }
+            .btn { padding: 12px 20px; font-size: 1rem; }
+            .whatsapp-btn { width: 50px; height: 50px; font-size: 2rem; bottom: 20px; right: 20px; }
+        }
+
+        .linkCorreo {text-decoration: none; color: var(--text-charcoal);}
+
+        .linkCorreo:hover {color: black; font-weight:900;}
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="fade-in">
+        <div class="container">
+            <div class="logo-container">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Escudo_Siervas_de_Cristo_Sacerdote.png/250px-Escudo_Siervas_de_Cristo_Sacerdote.png" class="logo" role="img" aria-label="Logo de la Fundación">
+            </div>
+            <h1>Gala Quinceañeras HSF 2025</h1>
+            <p class="slogan">Un día de sueños, identidad y celebración compartida</p>
+        </div>
+    </header>
+
+    <!-- Hero Image -->
+    <section class="hero fade-in">
+        <picture>
+            <source srcset="foto.jpg" type="image/jpeg">
+            <img src="foto.jpg" alt="Imagen elegante de la Gala de Quinceañeras" class="hero-image">
+        </picture>
+    </section>
+
+    <main class="container">
+        <!-- Event Information -->
+        <section class="event-info fade-in">
+            <div class="info-item">
+                <div class="info-icon" aria-hidden="true"><i class="fa-solid fa-calendar-days"></i></div>
+                <div class="info-text">
+                    <h3>Fecha</h3>
+                    <p>Viernes, 29 de agosto de 2025</p>
+                </div>
+            </div>
+            <div class="info-item">
+                <div class="info-icon" aria-hidden="true"><i class="fa-solid fa-clock"></i></div>
+                <div class="info-text">
+                    <h3>Hora</h3>
+                    <p>2:00 p.m.</p>
+                </div>
+            </div>
+            <div class="info-item">
+                <div class="info-icon" aria-hidden="true"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="info-text">
+                    <h3>Lugar</h3>
+                    <p>Hogar Sagrada Familia, Carrera 8 #1D-25, barrio Las Cruces, Bogotá</p>
+                </div>
+            </div>
+            <!-- <div class="info-item">
+                <div class="info-icon" aria-hidden="true"><i class="fa-solid fa-square-p"></i></div>
+                <div class="info-text">
+                    <h3>Parqueadero</h3>
+                    <p>Información disponible en recepción</p>
+                </div>
+            </div> -->
+            <div class="info-item">
+                <div class="info-icon" aria-hidden="true"><i class="fa-solid fa-person-walking"></i></div>
+                <div class="info-text">
+                    <h3>Acceso</h3>
+                    <p>Entrada principal sobre la carrera 8</p>
+                </div>
+            </div>
+            <div class="info-item">
+                <div class="info-icon" aria-hidden="true"><i class="fa-solid fa-user-tie"></i></div>
+                <div class="info-text">
+                    <h3>Código de vestuario</h3>
+                    <p>Etiqueta formal</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Countdown Timer -->
+        <section class="countdown fade-in">
+            <h2 class="countdown-title">Faltan</h2>
+            <div class="timer">
+                <div class="timer-item">
+                    <div class="timer-value" id="days">00</div>
+                    <div class="timer-label">Días</div>
+                </div>
+                <div class="timer-item">
+                    <div class="timer-value" id="hours">00</div>
+                    <div class="timer-label">Horas</div>
+                </div>
+                <div class="timer-item">
+                    <div class="timer-value" id="minutes">00</div>
+                    <div class="timer-label">Minutos</div>
+                </div>
+                <div class="timer-item">
+                    <div class="timer-value" id="seconds">00</div>
+                    <div class="timer-label">Segundos</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Actions -->
+        <section class="cta-section fade-in">
+            <a href="#" class="btn btn-secondary" id="add-to-calendar">
+                <span class="btn-icon"><i class="fa-solid fa-calendar-plus"></i></span>
+                Agregar a Google Calendar
+            </a>
+            <a href="#" class="btn btn-alternate" id="view-map">
+                <span class="btn-icon"><i class="fa-solid fa-map-location-dot"></i></span>
+                Ver ubicación en Google Maps
+            </a>
+            <button class="btn btn-primary" id="rsvp-button">
+                <span class="btn-icon"><i class="fa-solid fa-check"></i></span>
+                Confirmar asistencia
+            </button>
+        </section>
+    </main>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/573229064473" target="_blank" class="whatsapp-btn" aria-label="Contactar por WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span class="whatsapp-tooltip">Contáctanos por WhatsApp</span>
+    </a>
+
+    <!-- Footer -->
+    <footer class="fade-in">
+        <div class="container">
+            <p>© 2025 Hogar Sagrada Familia. Todos los derechos reservados.</p>
+            <p><a href="mailto:aljimenez.n@gmail.com" class="linkCorreo" target="_blank">Información de soporte técnico de la tarjeta</a></p>
+        </div>
+    </footer>
+
+    <!-- RSVP Modal -->
+    <div class="modal" id="rsvp-modal" aria-hidden="true" role="dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Confirmar Asistencia</h2>
+                <button class="close-modal" aria-label="Cerrar modal">&times;</button>
+            </div>
+            
+            <div class="modal-body">
+                <form id="rsvp-form">
+                    <div class="form-group">
+                        <label for="fullname">Nombre completo *</label>
+                        <input type="text" id="fullname" required aria-required="true">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="document">Número de documento *</label>
+                        <input type="text" id="document" required aria-required="true">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Teléfono *</label>
+                        <input type="tel" id="phone" required aria-required="true">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="photo">Subir fotografía tipo carnet *</label>
+                        <input type="file" id="photo" accept=".jpg,.jpeg,.png" required aria-required="true">
+                        <small>(JPG/PNG, máximo 5MB)</small>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="relationship">Relación con la quinceañera *</label>
+                        <select id="relationship" required aria-required="true">
+                            <option value="">Seleccionar</option>
+                            <option value="familiar">Familiar</option>
+                            <option value="benefactor">Benefactor</option>
+                            <option value="staff">Staff HSF</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>¿Asiste con acompañante? *</label>
+                        <div class="radio-group">
+                            <label class="radio-option">
+                                <input type="radio" name="companion" value="si" required aria-required="true"> Sí
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="companion" value="no"> No
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group companion-field" id="companion-name-field">
+                        <label for="companion-name">Nombre del acompañante *</label>
+                        <input type="text" id="companion-name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="dietary">¿Restricción alimentaria?</label>
+                        <textarea id="dietary" rows="2" placeholder="Ej: vegetariano, alergia a frutos secos..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-submit">Enviar confirmación</button>
+                </form>
+                
+                <div class="loader" id="form-loader">
+                    <div class="loader-circle"></div>
+                    <p>Procesando tu confirmación...</p>
+                </div>
+                
+                <div class="confirmation" id="confirmation-message">
+                    <div class="confirmation-icon"><i class="fa-solid fa-circle-check"></i></div>
+                    <h2>¡Confirmación Exitosa!</h2>
+                    <p>Tu asistencia ha sido registrada correctamente.</p>
+                    <!-- <p>Recibirás un correo electrónico con los detalles del evento y tu código QR para el check-in.</p> -->
+                    <p>¡Te esperamos con alegría!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- REEMPLAZA TU <script> EXISTENTE POR ESTE BLOQUE COMPLETO -->
+<script>
+    // --- Lógica del Contador y UI (sin cambios) ---
+    const eventDate = new Date('August 29, 2025 14:00:00 GMT-0500');
+    // ... (toda la lógica de la cuenta atrás y del modal permanece igual que en tu archivo original)
+    // Para brevedad, la omitimos aquí, pero asegúrate de tenerla en tu archivo final.
+    const daysElement = document.getElementById('days');
+    const hoursElement = document.getElementById('hours');
+    const minutesElement = document.getElementById('minutes');
+    const secondsElement = document.getElementById('seconds');
+    const rsvpButton = document.getElementById('rsvp-button');
+    const rsvpModal = document.getElementById('rsvp-modal');
+    const closeModalButton = document.querySelector('.close-modal');
+    const rsvpForm = document.getElementById('rsvp-form');
+    const formLoader = document.getElementById('form-loader');
+    const confirmationMessage = document.getElementById('confirmation-message');
+    const companionRadios = document.querySelectorAll('input[name="companion"]');
+    const companionField = document.getElementById('companion-name-field');
+    const companionNameInput = document.getElementById('companion-name');
+
+    function updateCountdown() {
+        const now = new Date();
+        const diff = eventDate - now;
+        if (diff <= 0) {
+            if (countdownInterval) clearInterval(countdownInterval);
+            daysElement.textContent = '00';
+            hoursElement.textContent = '00';
+            minutesElement.textContent = '00';
+            secondsElement.textContent = '00';
+            return;
+        }
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+        daysElement.textContent = days.toString().padStart(2, '0');
+        hoursElement.textContent = hours.toString().padStart(2, '0');
+        minutesElement.textContent = minutes.toString().padStart(2, '0');
+        secondsElement.textContent = seconds.toString().padStart(2, '0');
+    }
+    const countdownInterval = setInterval(updateCountdown, 1000);
+    updateCountdown();
+
+    rsvpButton.addEventListener('click', () => {
+        rsvpModal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    });
+
+    function closeModalHandler() {
+        rsvpModal.classList.remove('active');
+        document.body.style.overflow = 'auto';
+    }
+    closeModalButton.addEventListener('click', closeModalHandler);
+    rsvpModal.addEventListener('click', (e) => { if (e.target === rsvpModal) closeModalHandler(); });
+
+    companionRadios.forEach(radio => {
+        radio.addEventListener('change', () => {
+            if (radio.value === 'si') {
+                companionField.classList.add('visible');
+                companionNameInput.required = true;
+            } else {
+                companionField.classList.remove('visible');
+                companionNameInput.required = false;
+                companionNameInput.value = '';
+            }
+        });
+    });
+
+
+    // --- LÓGICA DE ENVÍO DEL FORMULARIO CON FETCH (NUEVA) ---
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbw1ZxnFLtMmZZIY1RClmQyyJ_pHfOutDz5u_80dqEs22-0wJglu23AFDhkGRup76zqX/exec';
+
+    rsvpForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        // Mostrar el loader
+        rsvpForm.style.display = 'none';
+        formLoader.style.display = 'block';
+
+        const file = document.getElementById('photo').files[0];
+        const reader = new FileReader();
+
+        reader.onload = function(event) {
+            // Esto se ejecuta cuando el archivo se ha leído
+            const fileData = event.target.result;
+
+            const formData = {
+                fullname: document.getElementById('fullname').value,
+                document: document.getElementById('document').value,
+                phone: document.getElementById('phone').value,
+                relationship: document.getElementById('relationship').value,
+                companion: document.querySelector('input[name="companion"]:checked').value,
+                companionName: companionNameInput.value,
+                dietary: document.getElementById('dietary').value,
+                photoData: fileData // La foto codificada en Base64
+            };
+
+            // Enviar los datos a la URL de Apps Script usando fetch
+            fetch(scriptURL, {
+                method: 'POST',
+                // Apps Script con doPost espera un string, así que convertimos el objeto a JSON
+                body: JSON.stringify(formData),
+                // Para evitar problemas de CORS, a veces es útil este header, aunque doPost no lo requiere
+                headers: {
+                    'Content-Type': 'text/plain;charset=utf-8', 
+                }
+            })
+            .then(response => response.json()) // Esperamos una respuesta JSON del script
+            .then(data => {
+                console.log(data); // Para depuración
+                if(data.status === 'success') {
+                    onSuccess();
+                } else {
+                    onFailure(new Error(data.message));
+                }
+            })
+            .catch(error => onFailure(error));
+        };
+
+        if (file) {
+            reader.readAsDataURL(file);
+        } else {
+            onFailure({ message: "Por favor, sube una fotografía." });
+        }
+    });
+
+    function onSuccess() {
+        formLoader.style.display = 'none';
+        confirmationMessage.style.display = 'block';
+    }
+
+    function onFailure(error) {
+        console.error('Error al enviar el formulario:', error);
+        formLoader.style.display = 'none';
+        alert('Error: ' + error.message);
+        rsvpForm.style.display = 'block'; // Volver a mostrar el formulario
+    }
+
+    // --- Botones de Calendario y Mapa (sin cambios) ---
+    // ... (la lógica de los botones de calendario y mapas permanece igual)
+    document.getElementById('add-to-calendar').addEventListener('click', (e) => {
+        e.preventDefault();
+        const eventDateLocal = new Date('2025-08-29T14:00:00-05:00'); 
+        const startDate = eventDateLocal.toISOString().replace(/-|:|\.\d+/g, '');
+        const endDate = new Date(eventDateLocal.getTime() + 4 * 60 * 60 * 1000).toISOString().replace(/-|:|\.\d+/g, '');
+        const calendarUrl = `https://www.google.com/calendar/render?action=TEMPLATE&text=Gala%20Quincea%C3%B1eras%20HSF%202025&dates=${startDate}/${endDate}&details=Un%20d%C3%ADa%20de%20sue%C3%B1os%2C%20identidad%20y%20celebraci%C3%B3n%20compartida&location=Hogar%20Sagrada%20Familia%2C%20Carrera%208%20%231D-25%2C%20barrio%20Las%20Cruces%2C%20Bogot%C3%A1&sf=true&output=xml`;
+        window.open(calendarUrl, '_blank');
+    });
+
+    document.getElementById('view-map').addEventListener('click', (e) => {
+        e.preventDefault();
+        const mapsUrl = `https://www.google.com/maps/search/?api=1&query=Hogar+Sagrada+Familia,+Carrera+8+%231D-25,+barrio+Las+Cruces,+Bogot%C3%A1`;
+        window.open(mapsUrl, '_blank');
+    });
+</script>
+
+</body>
+</html>
